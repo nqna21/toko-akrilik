@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cetak UV dan potong akrilik</title>
+<meta name="description" content="Pesan akrilik cetak UV dan potong sesuai desain: pilih ukuran, lihat harga langsung, unggah desain, lacak pesanan.">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="top"></div>
+<main id="main" class="wrap">
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1>Akrilik cetak UV, dipotong sesuai desainmu</h1>
+      <p class="lead">Pilih ukuran dan tebal, lihat harga langsung, unggah desain, lalu pesan. Status pesanan bisa dipantau dari HP.</p>
+      <div class="cta">
+        <a class="btn" href="/katalog.html">Lihat semua produk</a>
+        <a class="btn btn-line" href="/galeri.html">Lihat hasil karya</a>
+      </div>
+      <ul class="facts">
+        <li>Harga dihitung langsung</li>
+        <li>Unggah desain saat memesan</li>
+        <li>Lacak status dari antre sampai siap</li>
+      </ul>
+    </div>
+    <div class="pane est" id="est" aria-live="polite">
+      <h2>Hitung cepat potong + cetak</h2>
+      <div class="est-view" id="estView"></div>
+      <div class="est-row">
+        <div><label class="f" for="eW">Lebar (cm)</label><input class="in" id="eW" type="number" inputmode="decimal" step="0.5" value="20"></div>
+        <div><label class="f" for="eH">Tinggi (cm)</label><input class="in" id="eH" type="number" inputmode="decimal" step="0.5" value="20"></div>
+        <div><label class="f" for="eT">Tebal</label><select class="in" id="eT"></select></div>
+        <div><label class="f" for="eF">Finishing</label><select class="in" id="eF"></select></div>
+      </div>
+      <div class="err-text" id="eErr"></div>
+      <div class="est-price"><span class="muted">Estimasi 1 pcs, potong persegi</span><strong id="ePrice">–</strong></div>
+      <a class="btn btn-block" id="eGo" href="/katalog.html">Atur detail dan pesan</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Kategori produk</h2></div>
+  <div class="cats" id="cats"></div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Produk pilihan</h2><a href="/katalog.html">Lihat semua</a></div>
+  <div class="grid-p" id="featured"></div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Hasil karya terbaru</h2><a href="/galeri.html">Buka galeri</a></div>
+  <div id="recent"></div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Kenapa pesan di sini</h2></div>
+  <div class="props">
+    <div><h3>Harga terlihat sebelum pesan</h3><p>Rincian bahan, cetak UV, dan potong ditampilkan di setiap produk, jadi tidak ada kejutan di akhir.</p></div>
+    <div><h3>File dicek sebelum produksi</h3><p>Pesanan diproduksi setelah pembayaran dan file desain kami verifikasi.</p></div>
+    <div><h3>Status bisa dilacak</h3><p>Dari antre produksi, cetak UV, potong, pemeriksaan akhir, sampai siap diambil atau dikirim.</p></div>
+    <div><h3>Bantuan lewat WhatsApp</h3><p>Bingung memilih tebal atau menyiapkan file? Tanya langsung sesuai jam layanan.</p></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><h2>Cara order online</h2><a href="/cara-order.html">Panduan lengkap</a></div>
+  <ol class="steps">
+    <li><b>Pilih produk</b><span>Telusuri katalog atau galeri karya.</span></li>
+    <li><b>Atur ukuran dan finishing</b><span>Harga ikut berubah saat kamu memilih.</span></li>
+    <li><b>Unggah desain</b><span>Atau kirim file lewat WhatsApp.</span></li>
+    <li><b>Checkout dan bayar</b><span>Transfer, lalu unggah bukti pembayaran.</span></li>
+    <li><b>Ambil atau kirim</b><span>Pantau status sampai pesanan siap.</span></li>
+  </ol>
+</section>
+</main>
+<div id="foot"></div>
+<script type="module" src="/js/page-home.js"></script>
+</body>
+</html>
